@@ -117,7 +117,7 @@ class BayesClassifier:
         self.save_dict(self.neg_freqs, self.neg_filename)
 
     def classify(self, text: str) -> str:
-"""Classifies given text as positive, negative or neutral from calculating the
+        """Classifies given text as positive, negative or neutral from calculating the
         most likely document class to which the target string belongs
 
         Args:
@@ -325,7 +325,7 @@ if __name__ == "__main__":
     print("\nTesting Trials")
     print(b.classify("I'm so excited for the solar eclipse! It's going to be so cool!"))
     print(b.classify('I love pizza and tacos'))
-    print(b.classify('I'm excited for the game!'))
+    print(b.classify('Im excited for the game!'))
     print(b.classify('I love those new hats!'))
 
     print(b.classify('The solar eclipse is going to be boring, why should we waste our time?'))
@@ -336,5 +336,5 @@ if __name__ == "__main__":
     print(b.classify('\'Dune\' is a cinimatic masterpiece. The art, the music, the characters, the story. Everything lets you get immersed in this story'))
     print(b.classify('\'Blade Runner\' is certainly an impressive visual, striking colours and imagery. The pacing of the film may be rather slow but probably it was the intention of Villeneuve to make the audience really take in the shots on screen'))
 
-    print(b.classify('The story, the character development, the action... everything about it felt very dated and messy, with practically no redeeming qualities to be found anywhere.There was no depth to any of the characters which made it so hard to get invested in what was going on. In truth I don't think any of the performances were bad per se, but they were all so bland'))
+    print(b.classify('The story, the character development, the action... everything about it felt very dated and messy, with practically no redeeming qualities to be found anywhere.There was no depth to any of the characters which made it so hard to get invested in what was going on. In truth I dont think any of the performances were bad per se, but they were all so bland'))
     print(b.classify('The acting is terrible, the animations are amateurish, the plot is predictable and boring, and some of it also makes no sense. It was a complete waste of my time. I was amaze to discover that the movie as a connection to marvel and to spiderman world.'))
